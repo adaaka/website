@@ -1,0 +1,45 @@
+{{ define "main" }}
+<article>
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+
+  {{- $papers := .RegularPages }}
+  {{- range .Params.sections }}
+    {{- $name := . }}
+    {{- if eq $name "Working Papers" }}
+      {{- with $.Params.working_papers }}
+      <h2 class="section-title">Working Papers</h2>
+      <ul class="working-papers">
+        {{- range . }}
+        <li>{{ . | markdownify }}</li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    {{- else }}
+      {{- $inSection := where $papers "Params.section" $name }}
+      {{- with $inSection }}
+      <h2 class="section-title">{{ $name }}</h2>
+      <div class="papers">
+        {{- range sort (sort . "Title") "Params.year" "desc" }}
+        {{ partial "paper.html" . }}
+        {{- end }}
+      </div>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
+  {{- /* Papers whose "section:" doesn't match any name above still show up, so nothing silently disappears. */}}
+  {{- $unlisted := slice }}
+  {{- range $papers }}
+    {{- if not (in $.Params.sections .Params.section) }}{{ $unlisted = $unlisted | append . }}{{ end }}
+  {{- end }}
+  {{- with $unlisted }}
+  <h2 class="section-title">Other</h2>
+  <div class="papers">
+    {{- range sort . "Params.year" "desc" }}
+    {{ partial "paper.html" . }}
+    {{- end }}
+  </div>
+  {{- end }}
+</article>
+{{ end }}

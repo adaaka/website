@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ site.Params.description }}">
+  <link rel="icon" href="{{ "images/headshot.jpg" | relURL }}">
+  {{- with resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+  {{- end }}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav">
+      <a class="site-name" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+      <ul class="menu">
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer wrap">
+    © {{ now.Year }} {{ site.Title }}
+  </footer>
+</body>
+</html>

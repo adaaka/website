@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article>
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ with .Params.photos }}
+  <div class="photos">
+    {{- range . }}
+    <img src="{{ printf "images/teaching/%s" . | relURL }}" alt="" loading="lazy">
+    {{- end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

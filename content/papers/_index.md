@@ -1,0 +1,21 @@
+---
+title: "Papers"
+
+# The groups shown on the Papers page, top to bottom. Each paper file in
+# this folder has a "section:" line that must match one of these names.
+# "Working Papers" is special: it shows the list below.
+sections:
+  - "Human Memory and Decision Making"
+  - "Cognitive Processes"
+  - "Book Chapters"
+  - "Working Papers"
+
+# Working papers are listed by title only. To add one, copy a line.
+working_papers:
+  - "A Computational Framework for Memory-Based Decision Making: Modeling Evoked-Set Formation and Choice"
+  - "Quantifying the Benefits of AI-Assisted Recruitment"
+  - "The Saver Stereotype: How Financial Responsibility Shapes Social Perception and Interpersonal Judgment"
+  - "Semantic Similarity and Adaptive Decision Making"
+  - "Beautiful Memories and Subjective Time Perceptions"
+  - "Conversational AI Impacts Information Learning and Memory"
+---

@@ -1,0 +1,184 @@
+:root {
+  --text: #1f1f1f;
+  --muted: #666;
+  --accent: #8c1515; /* Stanford cardinal */
+  --line: #e6e6e6;
+  --button: #f0f0f0;
+  --button-hover: #e2e2e2;
+  --bg: #fff;
+  --width: 920px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--accent); }
+a:hover { opacity: 0.8; }
+img { max-width: 100%; height: auto; }
+
+.wrap {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--line); }
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.site-name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu a { color: var(--text); text-decoration: none; }
+.menu a[aria-current="page"] { font-weight: 600; border-bottom: 2px solid var(--accent); }
+
+main.wrap { padding-top: 40px; padding-bottom: 60px; }
+
+.site-footer {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+/* Homepage */
+.profile {
+  max-width: 680px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile h1 { margin: 16px 0 8px; font-size: 2.2rem; }
+.profile-bio { color: #333; }
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0 18px;
+}
+.button {
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: var(--button);
+  color: var(--text);
+  text-decoration: none;
+}
+.button:hover { background: var(--button-hover); opacity: 1; }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+/* Regular pages */
+.page-title { font-size: 2rem; margin: 0 0 24px; }
+.prose { max-width: 760px; }
+.prose h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; }
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 32px;
+}
+.photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Papers page */
+.section-title {
+  font-size: 1.45rem;
+  margin: 2.5rem 0 1.25rem;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--text);
+}
+.papers { display: flex; flex-direction: column; }
+
+.paper {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+.paper.no-image { grid-template-columns: 1fr; }
+.paper > * { min-width: 0; }
+.paper:last-child { border-bottom: none; }
+
+.paper-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paper-image img {
+  max-height: 200px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.paper-text h3 { margin: 0 0 8px; font-size: 1.1rem; line-height: 1.4; }
+.paper-text h3 a { color: var(--text); text-decoration-color: #bbb; text-underline-offset: 3px; }
+.paper-text h3 a:hover { color: var(--accent); opacity: 1; }
+.year { color: var(--muted); font-weight: 400; }
+.abstract { font-size: 0.93rem; line-height: 1.7; color: #3a3a3a; }
+.abstract p { margin: 0; }
+.abstract p + p { margin-top: 0.75em; }
+
+.working-papers { padding-left: 1.2em; }
+.working-papers li { margin-bottom: 0.5em; font-weight: 600; }
+
+/* Phones */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  main.wrap { padding-top: 28px; }
+  .wrap { padding: 0 16px; }
+  .paper { grid-template-columns: 1fr; gap: 14px; }
+  .paper-image img { max-height: 220px; }
+  .photos { grid-template-columns: 1fr; }
+}

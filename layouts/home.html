@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="profile">
+  {{ with .Params.photo }}
+  <img class="profile-photo" src="{{ printf "images/%s" . | relURL }}" alt="Photo of {{ site.Title }}" width="160" height="160">
+  {{ end }}
+  <h1>{{ .Title }}</h1>
+  <div class="profile-bio">{{ .Content }}</div>
+
+  <div class="buttons">
+    {{- range site.Menus.main }}
+    <a class="button" href="{{ .URL }}">{{ .Name }}</a>
+    {{- end }}
+  </div>
+
+  <ul class="links">
+    {{- range site.Params.links }}
+    <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
+    {{- end }}
+  </ul>
+</section>
+{{ end }}

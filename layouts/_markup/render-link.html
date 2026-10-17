@@ -1,0 +1,4 @@
+{{- $dest := .Destination -}}
+{{- if strings.HasPrefix $dest "/" }}{{ $dest = $dest | relURL }}{{ end -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $dest "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text }}</a>
+{{- /* The dashes above trim whitespace so no stray space appears after links. */ -}}

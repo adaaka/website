@@ -1,0 +1,14 @@
+<div class="paper{{ if not .Params.image }} no-image{{ end }}">
+  {{- with .Params.image }}
+  <div class="paper-image">
+    <img src="{{ printf "images/papers/%s" . | relURL }}" alt="" loading="lazy">
+  </div>
+  {{- end }}
+  <div class="paper-text">
+    <h3>
+      {{- with .Params.link }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $.Title }}</a>{{ else }}{{ .Title }}{{ end -}}
+      {{- with .Params.year }} <span class="year">({{ . }})</span>{{ end -}}
+    </h3>
+    <div class="abstract">{{ .Content }}</div>
+  </div>
+</div>
