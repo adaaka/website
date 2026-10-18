@@ -1,6 +1,7 @@
 ---
 title: "Semantic Determinants of Memorability"
 year: 2023
+journal: "Cognition"
 section: "Human Memory and Decision Making"
 link: "https://www.sciencedirect.com/science/article/abs/pii/S0010027723001312"
 image: "semantic_determinants.jpg"
