@@ -1,7 +1,22 @@
 {{ define "main" }}
 <article>
   <h1 class="page-title">{{ .Title }}</h1>
+  {{ if .Params.class_photos }}
+  {{ $sections := split .RawContent "<!-- teaching-more -->" }}
+  <div class="teaching-intro">
+    <div class="prose">{{ index $sections 0 | .RenderString }}</div>
+    <div class="teaching-gallery" aria-label="Teaching photos">
+      {{ range $i, $photo := .Params.class_photos }}
+      <a href="{{ printf "images/teaching/%s" $photo | relURL }}">
+        <img src="{{ printf "images/teaching/%s" $photo | relURL }}" alt="Teaching class photo {{ add $i 1 }}" loading="lazy" width="1200" height="900">
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ if gt (len $sections) 1 }}<div class="prose">{{ index $sections 1 | .RenderString }}</div>{{ end }}
+  {{ else }}
   <div class="prose">{{ .Content }}</div>
+  {{ end }}
 
   {{ with .Params.photos }}
   <div class="photos">
