@@ -24,16 +24,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
     name = "My GSB Profile"
     url = "https://www.gsb.stanford.edu/faculty-research/faculty/ada-aka"
 
-  # Social links shown beneath the buttons.
-  [[params.links]]
-    name = "Bluesky"
-    url = "https://bsky.app/profile/adaaka.bsky.social"
-  [[params.links]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/adaaka/"
-  [[params.links]]
-    name = "Twitter"
-    url = "https://twitter.com/AdaAka18"
 
 # Top navigation menu.
 [menus]
