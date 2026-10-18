@@ -37,5 +37,5 @@ I had so much fun joining multiple podcast episodes with *Think Fast Talk Smart*
 You can listen to them [here](https://www.fastersmarter.io/guests/ada-aka/) and on [Spotify](https://lnkd.in/dcgxbSe).
 
 
-I particularly enjoy working with companies and building workshops on insights from behavioral science for market research and consulting. For example, I worked with BroadBranch Advisors during their corporate retreat.
+I particularly enjoy working with companies on research questions and occasionally building workshops on insights from behavioral science for market research and consulting. For example, in graduate school, I worked with BroadBranch Advisors during their corporate retreat.
 
