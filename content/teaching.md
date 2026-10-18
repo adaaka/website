@@ -1,6 +1,9 @@
 ---
 title: "Teaching"
 # Small photos beside the first teaching section.
+photos:
+  - "teaching_1.jpg"
+  - "teaching_2.jpg"
 class_photos:
   - "class-1.jpg"
   - "class-2.jpg"
