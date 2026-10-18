@@ -1,6 +1,7 @@
 ---
 title: "Memory Modeling of Counterfactual Generation"
 year: 2024
+journal: "Journal of Experimental Psychology: Learning, Memory, and Cognition"
 section: "Human Memory and Decision Making"
 link: "https://psycnet.apa.org/record/2024-71240-001"
 image: "memory_modeling.jpg"
