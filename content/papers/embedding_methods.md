@@ -2,6 +2,7 @@
 title: "Word and Sentence Embedding Methods for Studying Human Behaviour"
 year: 2026
 section: "Book Chapters"
+book: "The Cambridge Handbook of Behavioural Data Science"
 link: "https://doi.org/10.1017/9781108939010.012"
 image: "embedding_methods.png"
 ---
