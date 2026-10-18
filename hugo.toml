@@ -33,7 +33,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
 # Top navigation menu.
 [menus]
   [[menus.main]]
-    name = "Papers"
+    name = "Research"
     pageRef = "/papers"
     weight = 1
   [[menus.main]]
