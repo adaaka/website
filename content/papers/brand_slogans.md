@@ -1,6 +1,7 @@
 ---
 title: "Predicting the Memorability of Brand Slogans"
 year: 2026
+journal: "Journal of Marketing Research"
 section: "Human Memory and Decision Making"
 link: "https://doi.org/10.1177/00222437261481110"
 image: "brand_slogans.png"
