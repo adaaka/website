@@ -3,13 +3,14 @@
   <h1 class="page-title">{{ .Title }}</h1>
   {{ if .Params.class_photos }}
   {{ $sections := split .RawContent "<!-- teaching-more -->" }}
+  {{ $intro := index $sections 0 }}
+  {{ $heading := index (findRE `(?m)^## .+$` $intro 1) 0 }}
+  <div class="prose teaching-intro-heading">{{ $heading | .RenderString }}</div>
   <div class="teaching-intro">
-    <div class="prose">{{ index $sections 0 | .RenderString }}</div>
+    <div class="prose">{{ replace $intro $heading "" | .RenderString }}</div>
     <div class="teaching-gallery" aria-label="Teaching photos">
       {{ range $i, $photo := .Params.class_photos }}
-      <a href="{{ printf "images/teaching/%s" $photo | relURL }}">
         <img src="{{ printf "images/teaching/%s" $photo | relURL }}" alt="Teaching class photo {{ add $i 1 }}" loading="lazy" width="1200" height="900">
-      </a>
       {{ end }}
     </div>
   </div>
