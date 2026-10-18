@@ -7,7 +7,7 @@
   <div class="paper-text">
     <h3>
       {{- with .Params.link }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $.Title }}</a>{{ else }}{{ .Title }}{{ end -}}
-      {{- with .Params.status }} <span class="year">({{ . }})</span>{{ else }}{{ with .Params.year }} <span class="year">({{ with $.Params.journal }}{{ . }}, {{ end }}{{ . }})</span>{{ end }}{{ end -}}
+      {{- if or .Params.status .Params.year }} <span class="year">({{ with .Params.book }}{{ . }}, {{ else }}{{ with $.Params.journal }}{{ . }}, {{ end }}{{ end }}{{ with .Params.status }}{{ . }}{{ else }}{{ $.Params.year }}{{ end }})</span>{{ end -}}
     </h3>
     <div class="abstract">{{ .Content }}</div>
   </div>
