@@ -1,8 +1,12 @@
-<div class="paper{{ if not .Params.image }} no-image{{ end }}">
+<div class="paper{{ if and (not .Params.image) (ne .Params.section "Book Chapters") }} no-image{{ end }}">
   {{- with .Params.image }}
   <div class="paper-image">
     <img src="{{ printf "images/papers/%s" . | relURL }}" alt="" loading="lazy">
   </div>
+  {{- else }}
+  {{- if eq .Params.section "Book Chapters" }}
+  <div class="paper-image" aria-hidden="true"></div>
+  {{- end }}
   {{- end }}
   <div class="paper-text">
     <h3>
