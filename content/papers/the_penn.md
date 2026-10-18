@@ -1,6 +1,7 @@
 ---
 title: "The Penn Electrophysiology of Encoding and Retrieval Study"
 year: 2024
+journal: "Journal of Experimental Psychology: Learning, Memory, and Cognition"
 section: "Human Memory and Decision Making"
 link: "https://psycnet.apa.org/record/2025-04908-001"
 image: "the_penn.jpg"
