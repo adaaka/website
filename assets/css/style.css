@@ -171,7 +171,7 @@ main.wrap { padding-top: 40px; padding-bottom: 60px; }
 .abstract p + p { margin-top: 0.75em; }
 
 .working-papers { padding-left: 1.2em; }
-.working-papers li { margin-bottom: 0.5em; font-weight: 600; }
+.working-papers li { margin-bottom: 0.5em; font-weight: 400; }
 
 /* Phones */
 @media (max-width: 640px) {
