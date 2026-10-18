@@ -1,5 +1,5 @@
 ---
-title: "Papers"
+title: "Research"
 
 # The groups shown on the Papers page, top to bottom. Each paper file in
 # this folder has a "section:" line that must match one of these names.
