@@ -13,7 +13,6 @@ photos:
 I designed a new course, **Design Strategy and the Science of Human Behavior** (formerly Customer Experience Design), and have been teaching it since then. The course bridges experimental psychology and design thinking to decode how leading brands create memorable customer experiences. Through real-world case studies and expert discussions, participants apply human-centered design methods to develop innovative proposals that transform brand interactions and drive lasting customer engagement.
 
 
-## Executive Education @ Stanford GSB
 
 
 I also developed and teach an executive education session for the Young Presidents' Organization (YPO) and other programs, working with CEOs and their executives. In one session, I explore the question: *What Can We Learn from Large Language Models (LLMs) About Human Psychology?*
