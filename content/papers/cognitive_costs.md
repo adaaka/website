@@ -1,6 +1,7 @@
 ---
 title: "A Timeline of Cognitive Costs in Decision-Making"
 year: 2025
+journal: "Trends in Cognitive Sciences"
 section: "Cognitive Processes"
 link: "https://www.sciencedirect.com/science/article/pii/S136466132500083X"
 image: "cognitive_costs.jpg"
