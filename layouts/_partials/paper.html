@@ -7,7 +7,7 @@
   <div class="paper-text">
     <h3>
       {{- with .Params.link }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $.Title }}</a>{{ else }}{{ .Title }}{{ end -}}
-      {{- with .Params.year }} <span class="year">({{ . }})</span>{{ end -}}
+      {{- with .Params.year }} <span class="year">({{ with $.Params.journal }}{{ . }}, {{ end }}{{ . }})</span>{{ end -}}
     </h3>
     <div class="abstract">{{ .Content }}</div>
   </div>
