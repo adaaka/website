@@ -182,3 +182,14 @@ main.wrap { padding-top: 40px; padding-bottom: 60px; }
   .paper-image img { max-height: 220px; }
   .photos { grid-template-columns: 1fr; }
 }
+
+/* Small class photos beside the teaching introduction. */
+.teaching-intro { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 28px; align-items: start; }
+.teaching-intro h2 { margin-top: 0; }
+.teaching-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-top: 6px; }
+.teaching-gallery a { display: block; }
+.teaching-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 6px; }
+@media (max-width: 760px) {
+  .teaching-intro { grid-template-columns: 1fr; gap: 20px; }
+  .teaching-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 24px; }
+}
