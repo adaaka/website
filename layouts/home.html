@@ -12,6 +12,12 @@
     {{- end }}
   </div>
 
+  <div class="buttons">
+    {{- range site.Params.buttons }}
+    <a class="button" href="{{ .url }}">{{ .name }}</a>
+    {{- end }}
+  </div>
+
   <ul class="links">
     {{- range site.Params.links }}
     <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
