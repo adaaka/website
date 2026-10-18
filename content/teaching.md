@@ -1,9 +1,13 @@
 ---
 title: "Teaching"
-# Photos shown at the bottom of the page (files live in static/images/teaching/).
-photos:
-  - "teaching_1.jpg"
-  - "teaching_2.jpg"
+# Small photos beside the first teaching section.
+class_photos:
+  - "class-1.jpg"
+  - "class-2.jpg"
+  - "class-3.jpg"
+  - "class-4.jpg"
+  - "class-5.jpg"
+  - "class-6.jpg"
 ---
 
 
@@ -17,6 +21,8 @@ I designed a new course, **Design Strategy and the Science of Human Behavior** (
 
 I also developed and teach an executive education session for the Young Presidents' Organization (YPO) and other programs, working with CEOs and their executives. In one session, I explore the question: *What Can We Learn from Large Language Models (LLMs) About Human Psychology?*
 
+
+<!-- teaching-more -->
 
 ## Prior Teaching Experience
 
