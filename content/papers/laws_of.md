@@ -2,6 +2,7 @@
 title: "Laws of Human Memory"
 year: 2024
 section: "Book Chapters"
+book: "The Oxford Handbook of Human Memory"
 link: "https://books.google.gr/books?hl=en&lr=&id=mLYMEQAAQBAJ&oi=fnd&pg=PA29&dq=info:cGwDhv_GdA4J:scholar.google.com&ots=o1ZsLfKZ5Y&sig=eA1pGbIRb3OPsZdYa6i_fX7_VZU&redir_esc=y#v=onepage&q&f=false"
 image: "laws_of.jpg"
 ---
