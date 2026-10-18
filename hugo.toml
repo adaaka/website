@@ -13,13 +13,18 @@ disableKinds = ["taxonomy", "term", "RSS"]
   description = "Ada Aka is an assistant professor of marketing at Stanford Graduate School of Business."
   email = "adaaka@stanford.edu"
 
-  # Links shown under the bio on the homepage (in this order).
-  [[params.links]]
+  # Professional buttons shown in the second homepage row.
+  [[params.buttons]]
     name = "CV"
     url = "https://www.gsb.stanford.edu/sites/default/files/faculty/cv/AdaAka_CV_Oct2026_w.pdf"
-  [[params.links]]
+  [[params.buttons]]
     name = "Google Scholar"
     url = "https://scholar.google.com/citations?user=aWWklnMAAAAJ&hl=en"
+  [[params.buttons]]
+    name = "My GSB Profile"
+    url = "https://www.gsb.stanford.edu/faculty-research/faculty/ada-aka"
+
+  # Social links shown beneath the buttons.
   [[params.links]]
     name = "Bluesky"
     url = "https://bsky.app/profile/adaaka.bsky.social"
