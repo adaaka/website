@@ -1,6 +1,7 @@
 ---
 title: "Free Association in a Neural Network"
 year: 2022
+journal: "Psychological Review"
 section: "Human Memory and Decision Making"
 link: "https://psycnet.apa.org/record/2023-06125-001"
 image: "free_association.jpg"
