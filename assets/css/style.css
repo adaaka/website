@@ -192,3 +192,4 @@ main.wrap { padding-top: 40px; padding-bottom: 60px; }
   .teaching-intro { grid-template-columns: 1fr; gap: 20px; }
   .teaching-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 24px; }
 }
+.stanford { color: var(--accent); }
