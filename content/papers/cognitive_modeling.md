@@ -2,7 +2,7 @@
 title: "Cognitive Modeling with Representations from Large-Scale Digital Data"
 year: 2022
 journal: "Current Directions in Psychological Science"
-section: "Cognitive Processes"
+section: "Human Memory and Consumer Decision Making"
 link: "https://journals.sagepub.com/doi/full/10.1177/09637214211068113"
 image: "cognitive_modeling.jpg"
 ---
