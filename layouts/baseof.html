@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="{{ site.Language.Locale | default "en" }}">
 <head>
+  {{ with site.Params.googleAnalytics }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ . }}', {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+  </script>
+  {{ end }}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
