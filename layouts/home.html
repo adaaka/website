@@ -4,7 +4,7 @@
   <img class="profile-photo" src="{{ printf "images/%s" . | relURL }}" alt="Photo of {{ site.Title }}" width="160" height="160">
   {{ end }}
   <h1>{{ .Title }}</h1>
-  <div class="profile-bio">{{ .Content }}</div>
+  <div class="profile-bio">{{ .Content | replaceRE "Stanford" "<strong class=\"stanford\">Stanford</strong>" | safeHTML }}</div>
 
   <div class="buttons">
     {{- range site.Menus.main }}
