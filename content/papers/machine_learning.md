@@ -2,7 +2,7 @@
 title: "Machine Learning Models for Predicting, Understanding, and Influencing Health Perception"
 year: 2021
 journal: "Journal of the Association for Consumer Research"
-section: "Cognitive Processes"
+section: "Human Memory and Consumer Decision Making"
 link: "https://www.journals.uchicago.edu/doi/full/10.1086/718456"
 image: "machine_learning.jpg"
 ---
