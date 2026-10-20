@@ -2,7 +2,7 @@
 title: "Predicting Recall of Words and Lists"
 year: 2021
 journal: "Journal of Experimental Psychology: Learning, Memory, and Cognition"
-section: "Human Memory and Decision Making"
+section: "Human Memory and Consumer Decision Making"
 link: "https://psycnet.apa.org/record/2020-77457-001"
 image: "predicting_recall.jpg"
 ---
