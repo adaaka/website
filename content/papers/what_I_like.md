@@ -2,7 +2,7 @@
 title: "What I Like is What I Remember: Memory Modulation and Preferential Choice"
 year: 2021
 journal: "Journal of Experimental Psychology: General"
-section: "Human Memory and Decision Making"
+section: "Human Memory and Consumer Decision Making"
 link: "https://psycnet.apa.org/buy/2021-33969-001"
 image: "what_I_like.jpg"
 ---
