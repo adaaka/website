@@ -2,7 +2,7 @@
 title: "Closed-loop Stimulation of Temporal Cortex Rescues Functional Networks and Improves Memory"
 year: 2018
 journal: "Nature Communications"
-section: "Human Memory and Decision Making"
+section: "Human Memory and Consumer Decision Making"
 link: "https://www.nature.com/articles/s41467-017-02753-0"
 image: "closed_loop.jpg"
 ---
